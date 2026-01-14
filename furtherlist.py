@@ -105,9 +105,33 @@ print(lengths)  # Output: [5, 5, 6, 4, 13]
 
 
 
+#store and calculate average grade for students
+# Organizing student grades
+grades = [85, 92, 78, 90, 88]
+# Adding a new grade
+grades.append(95)
+# Calculating the average grade
+average_grade = sum(grades) / len(grades)
+print(f"Average Grade: {average_grade:.2f}")
+# Finding the highest and lowest grades
+highest_grade = max(grades)
+lowest_grade = min(grades)
+print(f"Highest Grade: {highest_grade}")
+print(f"Lowest Grade: {lowest_grade}")
 
 
-
+#use alist to collect and analyze user feedback
+# Collecting user feedback
+feedback = ["Great service!", "Very satisfied", "Could be better", "Excellent experience"]
+# Adding new feedback
+feedback.append("Not happy with the service")
+# Counting specific feedback
+positive_feedback_count = sum(1 for comment in feedback if "great" in comment.lower() or "excellent" in comment.lower())
+print(f"Positive Feedback Count: {positive_feedback_count}")
+# Printing all feedback
+print("User Feedback:")
+for comment in feedback:
+    print(f"- {comment}")
 
 
 
