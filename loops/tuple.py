@@ -1,3 +1,4 @@
+
 #2. without paranthesis
 tuple1=1,2,3
 print(tuple1)
@@ -109,12 +110,31 @@ list_num[0]=100
 print(list_num)#o/p:[100, 20, 30]
 
 
+#Create a nested tuple representing a 3x3 matrix and print the matrix. Access and print the element at the second row and third column.
+matrix = (
+    (1, 2, 3),
+    (4, 5, 6),
+    (7, 8, 9)
+)
+print("Matrix:")
+for row in matrix:
+    print(row)
+print(f"Element at second row and third column: {matrix[1][2]}")
 
 
+#craete a tuple contaning 3 tuples, each with 3 elements.Print tuples of tuples
+tpl_of_tpls = (
+    (1, 2, 3),
+    (4, 5, 6),
+    (7, 8, 9)
+)
+print(tpl_of_tpls)
+o/p:((1, 2, 3), (4, 5, 6), (7, 8, 9))
 
-
-
-
+#Create a tuple with duplicate elements. Convert it to a set to remove duplicates and print the resulting set.
+tpl = (1, 2, 2, 3, 4, 4, 4, 5)
+unique_set = set(tpl)
+print(unique_set)
 
 
 
