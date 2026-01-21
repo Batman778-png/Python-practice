@@ -25,7 +25,6 @@ def even_or_odd(num):
 ## Call this function
 even_or_odd(24) o/p:the number is even
 
-
 ## function with multiple parameters
 def add(a,b):
     return a+b
@@ -97,9 +96,17 @@ multiply(2,3)
 o/p:(6,2)
 
 
-
-
-
+#more coding example w function
+#examploe 1:Temprature conversion
+def convert_temperature(temp,unit):
+    if unit=="C":
+        return temp *9/5 + 32 
+    elif unit=="F":
+        return(temp-32)*5/9
+    else:
+        return None
+print(convert_temperature(25,"C"))
+print(convert_temperature(77,"F"))
 
 
 
