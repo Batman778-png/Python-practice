@@ -108,8 +108,12 @@ def convert_temperature(temp,unit):
 print(convert_temperature(25,"C"))
 print(convert_temperature(77,"F"))
 
+#example 2:Passsword strengh checker
+def is__sttrong_password(password):
 
-
+    if len(password)<8:
+        return False
+    if not any(char.isdigit() for char in password):
 
 
 
